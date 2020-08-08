@@ -40,7 +40,7 @@ def call(String name){
         stage('Build Kubernetes Deployment') {
             steps {
                 dir("/Users/sethuram/Desktop/terraform/k8s") {
-                    sh 'kubectl apply -f ${REPO_NAME}-deployment.yaml'
+                    sh 'kubectl apply -f "${REPO_NAME}"-deployment.yaml'
                 }
 
             }
